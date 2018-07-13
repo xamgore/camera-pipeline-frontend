@@ -1,5 +1,5 @@
 <template>
-  <div class="part" @click="isOn = !isOn" :class="{ highlight: isOn, chosen }">
+  <div class="stripe" :class="{ chosen }">
 
     <div class="title">
       <div class="left">
@@ -7,7 +7,7 @@
         <span class="duration">{{ text_duration }} мин</span>
       </div>
 
-      <div class="right" @click="chosen = !chosen">
+      <div class="right" @click="check">
         <i :class="['fas', icon]"></i>
         <span class="filename">&nbsp;{{ file }}</span>
       </div>
@@ -42,20 +42,25 @@
     data: () => ({
       scrollLeft: 0,
       chosen: false,
-      isOn: false,
-    })
+    }),
+    methods: {
+      check() {
+        this.chosen = !this.chosen
+        this.$emit('input', this.chosen)
+      }
+    }
   }
 </script>
 
 <style scoped>
-  .part {
+  .stripe {
     padding-bottom: 2rem;
     background: transparent;
     color: #626262;
     position: relative;
   }
 
-  .part.chosen {
+  .stripe.chosen {
     background: #8bc34a29
   }
 
@@ -72,13 +77,11 @@
     font-size: 0.8em;
     vertical-align: top;
     margin-left: 0.5rem;
-    /*font-size: 18px;*/
-    /*font-weight: 500;*/
     display: inline-block;
     background: linear-gradient(45deg, #ff77d3 0%, #869bff 100%);
     color: white;
     cursor: pointer;
-    padding: 0px 5px;
+    padding: 0 5px;
     border-radius: 10px;
   }
 
@@ -103,8 +106,6 @@
 
   img {
     max-height: 50px;
-    /*width: 286px;*/
-    /*width: 100%;*/
   }
 
   img:not(:last-of-type) {

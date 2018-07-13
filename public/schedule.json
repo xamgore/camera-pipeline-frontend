@@ -3,20 +3,20 @@
     {
       "time":  "10:00",
       "week":  "even",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Формальные языки",
       "short": "FL",
       "who":   "Вербицкая Е."
     }, {
       "time":  "12:00",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Алгоритмы и структуры данных",
       "short": "Алгоритмы",
       "who":   "Слабодкин М.А."
     }, {
       "time":  "16:30",
       "week":  "odd",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Формальные языки",
       "short": "FL",
       "who":   "Дворкин М.Э."
@@ -25,17 +25,17 @@
   "Tuesday":  [
     {
       "time":  "10:00",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "C++",
       "who":   "Лесин В.М."
     }, {
       "time":  "14:30",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Java",
       "who":   "Кузнецов А.м."
     }, {
       "time":  "16:30",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Машинное обучение",
       "short": "ML",
       "who":   "Шпильман А."
@@ -44,31 +44,31 @@
   "Thursday": [
     {
       "time":  "10:00",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Алгоритмы и структуры данных",
       "short": "Алгоритмы",
       "who":   "Смаль А.В."
     }, {
       "time":  "14:30",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Матлогика",
       "who":   "Москвин Д.Н."
     }, {
       "time":  "16:30",
       "week":  "even",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Матлогика",
       "who":   "Москвин Д.Н"
     }, {
       "time":  "16:30",
       "week":  "odd",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Типы в языках программирования",
       "short": "TAPL",
       "who":   "Москвин Д.Н"
     }, {
       "time":  "18:30",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Типы в языках программирования",
       "short": "TAPL",
       "who":   "Москвин Д.Н."
@@ -77,18 +77,18 @@
   "Friday":   [
     {
       "time":  "10:00",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Java",
       "who":   "Саввинов Д."
     }, {
       "time":  "12:00",
-      "type":  "lecture",
+      "category":  "лекция",
       "title": "Software Design",
       "short": "SD",
       "who":   "Брыксин Т."
     }, {
       "time":  "14:30",
-      "type":  "practice",
+      "category":  "практика",
       "title": "Software Design",
       "short": "SD",
       "who":   "Литвинов Ю."

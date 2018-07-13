@@ -1,5 +1,5 @@
 <template>
-  <div class="part" @click="isOn = !isOn" :class="{ highlight: isOn }">
+  <div class="stripe" @click="isOn = !isOn" :class="{ highlight: isOn }">
 
     <div class="name">{{ d.title }}</div>
 
@@ -31,7 +31,7 @@
 </script>
 
 <style scoped>
-.part {
+.stripe {
   padding-bottom: 2rem;
   margin-bottom: 1.5rem;
   background: transparent;
